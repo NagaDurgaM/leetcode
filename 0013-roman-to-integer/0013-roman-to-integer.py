@@ -14,7 +14,6 @@ class Solution:
         n = len(s)
         
         for i in range(n):
-            # If the current symbol value is less than the next symbol value, subtract it
             if i < n - 1 and roman_map[s[i]] < roman_map[s[i + 1]]:
                 total -= roman_map[s[i]]
             else:
